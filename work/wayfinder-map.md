@@ -18,7 +18,7 @@
 ## Decisions so far
 
 - 采用本地 provider fixture，不连接真实搜索引擎；使用 Chromium 触发页面检索。
-- 将策略变更拆成纯函数 `normalizeQuery`、`selectProvider`、`retrieveWithFallback`、`paginate`，页面只负责调用和展示。
+- 将策略变更拆成纯函数 `normalizeQuery`、`selectProvider`、`retrieveWithFallback`、`collectPages`，页面只负责调用和展示。
 - fallback 只允许在可重试的 transport/5xx 条件触发；429、401/403 和语义空结果不盲目 fallback。
 
 ## Acceptance gates

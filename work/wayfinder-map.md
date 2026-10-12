@@ -1,6 +1,6 @@
 # 浏览器检索策略/代码修改：Wayfinder Map
 
-> 状态：已验证，待远程仓库创建与最终一致性核对
+> 状态：已完成，远程 main 已创建并推送
 > 建立日期：2026-10-12
 > 项目中文名：浏览器检索策略或代码的具体修改
 > 仓库目标：`browser-retrieval-strategy-code-change`
@@ -27,7 +27,7 @@
 - [x] `npm run check` 检查报告、FIX 引用、文档链接和敏感信息。
 - [x] 五份问题报告均有复现入口、修复引用和回归结果。
 - [x] 真实上游项目只作机制引用，不声称其修复本项目代码。
-- [ ] Public GitHub 仓库内容与本地 commit 一致。
+- [x] Public GitHub 仓库内容与本地 commit 一致。
 
 ## Evidence
 
@@ -35,6 +35,7 @@
 - `npm run check`：PASS，5 个问题报告、27 个文件扫描。
 - `npm run reproduce -- --scenario fallback-503`：PASS，观测到 primary 503 → secondary 200。
 - `docs/regression-records/浏览器检索策略-回归记录-20261012.md` 已回填 Chromium 156.0.8078.4 和结果矩阵。
+- Remote：`https://github.com/kaijie0074-art/browser-retrieval-strategy-code-change`
 
 ## Not yet specified
 

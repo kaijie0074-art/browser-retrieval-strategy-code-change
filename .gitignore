@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+npm-debug.log*
+evidence/generated/
+evidence/*.zip
+playwright-report/
+test-results/

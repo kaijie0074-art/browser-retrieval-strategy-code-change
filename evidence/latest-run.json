@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-12T08:26:21.681Z",
+  "checks": [
+    {
+      "id": "query-normalization",
+      "status": "passed",
+      "detail": "trim, lowercase, collapse, deduplicate, stable sort"
+    },
+    {
+      "id": "baseline-raw-query",
+      "status": "passed",
+      "detail": "success"
+    },
+    {
+      "id": "query-normalization-browser",
+      "status": "passed",
+      "detail": "[{\"provider\":\"primary\",\"status\":200,\"semanticEmpty\":false}]"
+    },
+    {
+      "id": "fallback-503",
+      "status": "passed",
+      "detail": "primary 503 -> secondary 200 exactly once"
+    },
+    {
+      "id": "rate-limit-no-fallback",
+      "status": "passed",
+      "detail": "429 stops without secondary call"
+    },
+    {
+      "id": "semantic-empty-no-fallback",
+      "status": "passed",
+      "detail": "semantic-empty is not treated as provider outage"
+    },
+    {
+      "id": "repeated-cursor",
+      "status": "passed",
+      "detail": "duplicate cursor stops pagination"
+    },
+    {
+      "id": "transport-fallback",
+      "status": "passed",
+      "detail": "transport error is bounded to one secondary attempt"
+    },
+    {
+      "id": "browser-smoke",
+      "status": "passed",
+      "detail": "Chromium rendered strategy evidence and results"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "browser-retrieval-strategy-code-change",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic browser retrieval strategy and code-change simulation.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "reproduce": "node scripts/reproduce.mjs",
+    "test": "node scripts/run-regression.mjs",
+    "check": "node scripts/check-artifacts.mjs"
+  },
+  "devDependencies": { "playwright": "^1.60.0" }
+}
